@@ -1,0 +1,24 @@
+# Node dependencies & build
+node_modules/
+dist/
+
+# Linux FIFO special filesystem node (cannot be tracked by git)
+linux-implementation/myfifo
+myfifo
+
+# Session lock files & temporary runtime logs
+*.lock
+.fifo_*.lock
+linux-implementation/.fifo_*.lock
+linux-implementation/myfifo_display.txt
+*.log
+
+# Linux compiled binaries (rebuilt via Makefile / make all)
+linux-implementation/fifo_reader
+linux-implementation/fifo_writer
+linux-implementation/pipe_demo
+*.o
+
+# OS metadata
+.DS_Store
+Thumbs.db
