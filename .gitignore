@@ -2,33 +2,28 @@
 node_modules/
 dist/
 .vite/
-OCTO_OSSP-Project/node_modules/
-OCTO_OSSP-Project/dist/
-OCTO_OSSP-Project/.vite/
+**/node_modules/
+**/dist/
+**/.vite/
 
 # Linux FIFO special filesystem node
 myfifo
-*/myfifo
-*/*/myfifo
+**/myfifo
 
 # Session lock files & temporary runtime logs
 *.lock
 .fifo_*.lock
-*.lock
-*/myfifo_display.txt
-*/*/myfifo_display.txt
+**/.fifo_*.lock
+**/myfifo_display.txt
 *.log
 
 # Linux compiled binaries
 fifo_reader
 fifo_writer
 pipe_demo
-*/fifo_reader
-*/fifo_writer
-*/pipe_demo
-*/*/fifo_reader
-*/*/fifo_writer
-*/*/pipe_demo
+**/fifo_reader
+**/fifo_writer
+**/pipe_demo
 *.o
 
 # OS metadata
